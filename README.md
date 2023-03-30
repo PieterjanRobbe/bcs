@@ -14,12 +14,12 @@ Quickstart
 The quickest way to get started is to compile the python wrapper on your system. To do so, you will need [`f90wrap`](https://github.com/jameskermode/f90wrap). Then just
 
 ```
-cd wrap
-make F90=gfortran
+cd bcs
+make
 python -c "from bcs import *"
 ```
 
-or you can use `F90=ifort` for that compiler. If no errors are shown, the standalone BCS solver is ready to use. If you have an underdetermined matrix `M` with training vector `y`, then you call call it with:
+If no errors are shown, the standalone BCS solver is ready to use. If you have an underdetermined matrix `M` with training vector `y`, then you call call it with:
 
 ```python
 import bcs
